@@ -1,0 +1,18 @@
+<h2>My Storages</h2>
+<ul class="storages">
+  <li ngFor="let storage for storages" (click)="">
+    <span class="badge">{{storage.id}}</span> {{storage.name}}
+  </li>
+</ul>
+
+<div *ngIf="selectedStorage">
+
+  <h2>{{selectedStorage.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedStorage.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedStorage.name" placeholder="name"/>
+    </label>
+  </div>
+
+</div>
