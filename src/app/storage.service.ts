@@ -13,6 +13,6 @@ export class StorageService {
   ) {}
 
   getStorages(): Observable<any> {
-    return this.httpClient.get('http://localhost:3000/storages')
+    return this.httpClient.get(this.storagesUrl);
   }
 }

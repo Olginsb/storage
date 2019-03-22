@@ -9,14 +9,10 @@ import { Storage} from "../storage";
 export class StoragesComponent implements OnInit {
 
   storage: Storage[] = [];
-  selectedStorage: Storage;
   constructor() { }
 
   ngOnInit() {
 
   }
 
-  onSelect(storage: Storage): void {
-    this.selectedStorage = storage;
-  }
 }
